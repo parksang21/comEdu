@@ -7,11 +7,13 @@ class CommentForm(forms.ModelForm):
     class Meta:
         model = Comment
         fields = ('author', 'message')
+    class SomeForm(forms.Form):
+        foo = forms.CharField(widget=SummernoteWidget())
+
 
 class NewForm(forms.ModelForm):
     class Meta:
         model = Post
         fields = ('title', 'content', 'photo')
-
-class SomeForm(forms.Form):
-    foo = forms.CharField(widget=SummernoteWidget())
+    class SomeForm(forms.Form):
+        foo = forms.CharField(widget=SummernoteWidget())

@@ -38,20 +38,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
     'customuser',
-
     #for calendar
     'comedu_calendar',
-
-    #for calendar
-    'comedu_calendar',
-
     'blog',
-
     'polls',
-
-    'board',
+    'django_summernote',
 ]
 
 MIDDLEWARE = [
@@ -137,9 +129,6 @@ USE_TZ = True
 STATIC_URL = '/static/'
 ##add for calendar
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-<<<<<<< HEAD
-=======
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
->>>>>>> fffc4bed065a49a01fedf926fb34de3072df74dd

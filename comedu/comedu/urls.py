@@ -37,7 +37,7 @@ urlpatterns = [
 
     # polls app url
     url(r'^polls/', include('polls.urls')),
-
+    url(r'^summernote/', include('django_summernote.urls')),
     # main page
     url(r'^$', mainView, name='home'),
 
